@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <title>COA</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="book.css">
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+
+<style>
+/* Section Styling */
+.section-container {
+      padding: 50px 20px;
+      /* background-color: #1a1a1a; */
+      color: white;
+      text-align: center;
+      margin-bottom: 50px;
+      
+    }
+
+    /* .section-heading {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+    } */
+
+    .section-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    /* Card Design from Uiverse.io by alexruix */
+    .card {
+      width: 190px;
+      height: 254px;
+      border-radius: 20px;
+      background: #f5f5f5;
+      position: relative;
+      padding: 1.8rem;
+      border: 2px solid #c3c6ce;
+      transition: 0.5s ease-out;
+      overflow: visible;
+    }
+
+    .card-details {
+      color: black;
+      height: 100%;
+      gap: .5em;
+      display: grid;
+      place-content: center;
+    }
+
+    .card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  height: 30px; /* Increased height for better visibility */
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8; /* Changed to a more vibrant blue */
+  color: white; /* Changed text color to white for better contrast */
+  font-size: 1rem; /* Slightly larger font size */
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+/* Adjust hover effect for the button */
+/* */
+
+
+    .text-body {
+      color: rgb(138, 78, 125);
+      font-size: 15px;
+      font-family:  fira code;
+    }
+
+    /* Text */
+    .text-title {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    /* Hover Effect */
+    .card:hover {
+      border-color:rgb(46, 50, 53);
+      box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .card:hover .card-button {
+      transform: translate(-50%, 50%);
+      opacity: 1;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      .section-box {
+        width: 100%;
+      }
+    }
+
+
+</style>
+<body class="body">
+  <!-- <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript> -->
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar" style="position: fixed;">
+      <div class="logo" tabindex="0">
+        <div class="logo-top">
+          <img src="src/png/avatar.png" alt="animation-head" id="nav-avatar" data-aos="fade-down" data-aos-delay="100"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class=" " class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+          <a href="index.html">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="courseactivity.html">
+              
+                 &#60;/Course Activity&#62;
+            </a>
+          </li>
+
+        
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+
+  <section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+    <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+      <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+        <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+          &#60;Integrated Course Activity&#62;
+        </h2>
+        <p class="sectionHeadingP" style="color: white;"> </p>
+      </div>
+  
+      <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+        <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1200px;">
+          <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between;">
+            
+            <!-- Content Section (Left Half) -->
+            <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+                The Integrated Course Activity provides students with a valuable hands-on experience using widely-used simulation tools, such as Logisim. This practical exercise takes students through a detailed, step-by-step exploration of a processor's instruction lifecycle, covering key stages from fetching and decoding instructions to executing them and writing back the results. By engaging in this process, students develop a deeper understanding of how processors handle instructions, interact with memory, and manage control flow. Additionally, they gain insights into the inner workings of the processor, allowing them to better grasp how hardware and software interact within a computer system.
+              </p>
+            </div>
+  
+            <!-- Image Section (Right Half) -->
+            <div class="image-div" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+              <iframe src="https://lottie.host/embed/01b3878a-30e9-4d7d-b91b-470eb7ef21f5/QTCcPx5nEC.lottie"
+                      style="width: 100%; height: 100%; border: none; object-fit: cover; border-radius: 8px;">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section-container" id="processor-module-design">
+   
+    <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+      <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+        &#60;Processor Module Design&#62;
+      </h2>
+      <p class="sectionHeadingP" style="color: white;"> </p>
+    </div>
+
+    <div class="section-content" style="padding-top: 30px;">
+      <!-- Card for N bit Arithmetic and Logical Unit -->
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-details">
+          <p class="text-title">N bit Arithmetic and Logical Unit</p>
+          <p class="text-body">Performs arithmetic and logical operations on data.</p>
+        </div>
+        <a href="8bit.html">
+          <button class="card-button">More info</button>
+        </a>
+      </div>
+
+      <!-- Card for Memory -->
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-details">
+          <p class="text-title">Memory</p>
+          <p class="text-body">Stores data and instructions that the CPU needs.</p>
+        </div>
+        <a href="memory.html">
+
+          <button class="card-button">More info</button>
+        </a>
+      </div>
+
+      <!-- Card for Register File -->
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-details">
+          <p class="text-title">Register File</p>
+          <p class="text-body">Holds immediate data during computation.</p>
+        </div>
+        <a href="register.html">
+
+          <button class="card-button">More info</button>
+        </a>
+      </div>
+
+      <!-- Card for Special Function Register -->
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-details">
+          <p class="text-title">Special Function Register</p>
+          <p class="text-body">Stores control flags for processor operations.</p>
+        </div>
+        <a href="sfrd.html">
+
+          <button class="card-button">More info</button>
+        </a>
+      </div>
+
+      <!-- Card for Processor Status Word -->
+      <div class="card" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-details">
+          <p class="text-title">Processor Status Word</p>
+          <p class="text-body">Contains flags that indicate the current state of the processor.</p>
+        </div>
+        <a href="psw.html">
+
+          <button class="card-button">More info</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Second Section: Processor Module Integration -->
+  <section class="section-container" id="processor-module-integration" >s
+    <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+      <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+        &#60;Processor Module Integration&#62;
+      </h2>
+      <p class="sectionHeadingP" style="color: white;"> </p>
+    </div>
+    <div class="section-content">
+      <!-- Card for Instruction Format for Different Addressing Modes -->
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-details">
+          <p class="text-title">Instruction Format</p>
+          <p class="text-body">Defines how instructions are structured for different addressing modes.</p>
+        </div>
+        <a href="instructionformat.html">
+
+          <button class="card-button">More info</button>
+        </a>
+      </div>
+
+      <!-- Card for Instruction Life Cycle -->
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-details">
+          <p class="text-title">Instruction Life Cycle</p>
+          <p class="text-body">Fetch → Decode → Execute → Write-back.</p>
+        </div>
+        <a href="instrnlifecycle.html">
+
+          <button class="card-button">More info</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+
+
+
+
+
+
+  <!-- main ends here -->
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background" style="height: 10px;">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="">
+      <div class="footercontainer">
+  
+        <div class="footer-bottom">
+          <article>
+            
+            &COPY; Copyright 2024  Computer Organization and Architecture
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      // var url = "src/pdf/Vinod's Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  
+</body>
+
+</html>

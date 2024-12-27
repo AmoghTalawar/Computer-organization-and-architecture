@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-YMWDE0VTD3");
+  </script> -->
+
+  <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <title>COA</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+  <style>
+    .book {
+      position: relative;
+      border-radius: 10px;
+      width: 350px;
+      height: 440px;
+      background-color: whitesmoke;
+      -webkit-box-shadow: 1px 1px 12px #000;
+      box-shadow: 1px 1px 12px #000;
+      -webkit-transform: preserve-3d;
+      -ms-transform: preserve-3d;
+      transform: preserve-3d;
+      -webkit-perspective: 2000px;
+      perspective: 2000px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #000;
+
+
+
+      background-size: cover;
+      background-position: center;
+      transition: all 0.5s ease;
+      /* margin-left: 80px; */
+      margin-top: 40px;
+    }
+
+    .cover {
+      top: 0;
+      position: absolute;
+      background-color: rgba(169, 169, 169, 0.7);
+      /* Light gray with opacity */
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-transform-origin: 0;
+      -ms-transform-origin: 0;
+      transform-origin: 0;
+      -webkit-box-shadow: 1px 1px 12px #000;
+      box-shadow: 1px 1px 12px #000;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+      /* Add background image for the cover */
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .book:hover {
+      transform: scale(1.1);
+      /* Increase the size of the book on hover */
+    }
+
+    .book:hover .cover {
+      -webkit-transform: rotateY(-80deg);
+      -ms-transform: rotateY(-80deg);
+      transform: rotateY(-80deg);
+    }
+  </style>
+
+<body class="body">
+  
+ 
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+    
+
+    <div class="navbar" id="navbar" style="position: fixed;">
+      <div class="logo" tabindex="0">
+        <div class="logo-top">
+          <img src="src/png/avatar.png" alt="animation-head" id="nav-avatar" data-aos="fade-down" data-aos-delay="100"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class=" " class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="index.html" >
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="courseactivity.html">
+              &#60;/Course Activity&#62;
+            </a>
+          </li>
+
+        
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" >
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" ">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" >
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" >
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">C</p>
+          <p class="jello">O</p>
+          <p class="jello">M</p>
+          <p class="jello">P</p>
+          <p class="jello">U</p>
+          <p class="jello">T</p>
+          <p class="jello">U</p>
+          <p class="jello">R</p>
+          <p class="jello">E</p>
+        </article>
+
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello" id="name">O</p>
+            <p class="jello">R</p>
+            <p class="jello">G</p>
+            <p class="jello">A</p>
+            <p class="jello">N</p>
+            <p class="jello">I</p>
+            <p class="jello">Z</p>
+            <p class="jello">A</p>
+            <p class="jello">T</p>
+            <p class="jello">I</p>
+            <p class="jello">O</p>
+            <p class="jello">N</p>
+
+
+
+          </div>
+          <div>
+            <p class="jello">&</p>
+          </div>
+          <!-- Organization & Architecture -->
+          <div>
+            <p class="jello" id="name">A</p>
+            <p class="jello">R</p>
+            <p class="jello">C</p>
+            <p class="jello">H</p>
+            <p class="jello">I</p>
+            <p class="jello">T</p>
+            <p class="jello">E</p>
+            <p class="jello">C</p>
+            <p class="jello">T</p>
+            <p class="jello">U</p>
+            <p class="jello">R</p>
+            <p class="jello">E</p>
+
+
+          </div>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          Computer architecture is the art of turning abstract logic into tangible performance, where every instruction
+          counts.<br />
+          <br />
+
+        </p>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+
+            <a href="courseactivity.html">
+
+              <button class="letsTalkBtn">
+                <p class="letsTalkBtn-text">Explore</p>
+                <span class="letsTalkBtn-BG"></span>
+              </button>
+            </a>
+        </div>
+        <!-- setting div ends -->
+      </div>
+      <!-- contact-btn-div -->
+      </div>
+
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info" style="font-size: 35px; line-height: 15px; margin-top: 35px;">
+            <p tabindex="0">
+              <strong>SRN :</strong> 01FEBCS414 <br>
+              <strong>Name :</strong> Amogh Talawar <br>
+              <strong>Branch :</strong> Computer Science Engineering <br>
+              <strong>Division :</strong> D Division <br>
+              <strong>College :</strong> KLE Technological University
+            </p>
+            <br />
+            <p tabindex="0">
+
+            </p>
+            <br />
+            <p tabindex="0">
+
+            </p>
+            <!-- Resume button -->
+            <!-- <button class="resume-btn" id="resume-btn" onclick="openURL()">
+              <div class="sign">
+                <svg viewBox="0 0 640 512">
+                  <path
+                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+                </svg>
+              </div>
+
+              <div class="text">Resume</div>
+            </button> -->
+          </div>
+
+
+          <div class="dp" data-aos="fade-up">
+            <img src="src/png/20241224_140856 (2).jpg" alt="" tabindex="0" aria-label="" />
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack
+          </h3>
+          <ul class="tech-stack-wrapper">
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
+              <span class="tooltip">HTML</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
+              <span class="tooltip">CSS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">JS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/bootstraplogo.png" alt="bootstrap skill" class="tech-stack-logo" />
+              <span class="tooltip">BOOTSTRAP</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">REACTJS</span>
+            </li>
+
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/node.png" alt="nodejs skill" class="tech-stack-logo" />
+              <span class="tooltip">NODEJS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/springBoot.png" alt="nextjs skill" class="tech-stack-logo" />
+              <span class="tooltip">SPRINGBOOT</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="https://pngimg.com/uploads/mysql/mysql_PNG23.png" alt="tinacms skill" class="tech-stack-logo" />
+              <span class="tooltip">MYSQL</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Mongodb.png" alt="astro skill" class="tech-stack-logo" />
+              <span class="tooltip">MONGODB</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/jsp.png" alt="git skill" class="tech-stack-logo"
+                style="height: 120px; width: fit-content;" />
+              <span class="tooltip">JSP</span>
+            </li>
+
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">GITHUB</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">GIT</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+
+
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;COURSE INTRODUCTION&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="project-boxes-div">
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2" style="width: 850px; height: 450px;">
+              <div class="info-div" style="width: fit-content;">
+                <article class="ProjectHeading" style="font-size: 25px;">
+                  Course code: 21ECSC201 <br>
+                  Credits: 4 </article>
+
+                <p style="color: white; text-align: justify; font-size: 17px;">
+                  The Computer Organization & Architecture course covers the core principles of computer systems,
+                  including memory hierarchy, input/output mechanisms, interrupts, pipelining and the basics of parallel
+                  processing. It offers a thorough understanding of how modern computer systems operate and interconnect
+                  at both hardware and software levels. By bridging the gap between hardware and software, this course
+                  equips future engineers with the skills to design efficient, scalable and robust computing systems. A
+                  key component of the course is a hands-on activity where students design a simple processor using a
+                  simulation tool, providing them with valuable insights into the instruction lifecycle and the internal
+                  workings of processors.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-boxes-div">
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2" style="width: 850px; height: 450px;">
+              <div class="info-div" style="width: fit-content;">
+                <article class="ProjectHeading">COURSE OUTCOMES</article>
+
+                <p style="color: white; text-align: justify; font-size: 17px;">
+                  <ul style="color: white; text-align: justify; font-size: 17px; line-height: 30px;">
+
+                    <li>
+                      	Acquire basic knowledge in computer fundamentals, performance analysis and interconnection principles in modern computing.
+                    </li>
+                    <li>
+
+                      	Build memory modules to perform I/O operations.
+                    </li>
+                    <li>
+
+                      	Apply Instruction Set Architecture principles to effectively design and implement datapath in computer systems.
+                    </li>
+                    <li>
+
+                      	Explain the concept of parallelism with reference to computer performance.
+                    </li>
+                    <li>
+
+                      	Integrate and simulate all modules to develop a complete processor, followed by a comprehensive performance analysis.
+                    </li>
+                  </ul>
+
+                  
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      </div>
+
+    </section>
+
+
+
+
+
+  </main>
+
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="Text Book ">
+            Text Book
+          </article>
+        </div>
+
+        <div class="heading-line"></div>
+        <div class="book" style="background-image: url(src/png/coa\ \(1\).png)">
+
+          <p></p>
+          <div class="cover"
+            style="background-image: url('https://m.media-amazon.com/images/I/7128Ts1XUdL._AC_UF1000,1000_QL80_.jpg');">
+
+            <p></p>
+          </div>
+        </div>
+
+
+        <div class="footer-bottom" style="margin-top: 55px;">
+          <article>
+            
+            &COPY; Copyright 2024  Computer Organization and Architecture
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      // var url = "src/pdf/Vinod's Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  
+</body>
+
+</html>

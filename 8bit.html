@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-YMWDE0VTD3");
+  </script> -->
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <title>8 bit ALU</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+<link rel="stylesheet" href="book.css">
+
+<style>
+
+.reference {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;  /* Space between images */
+        padding: 0 20px;
+        flex-wrap: wrap; /* Allow images to stack on smaller screens */
+    }
+
+    .img-ot, .digr {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 8s00px;
+    }
+
+    /* Make images responsive */
+    .img-ot img, .digr img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;  /* Rounded corners for a modern look */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .reference {
+            flex-direction: column; /* Stack the images vertically on smaller screens */
+            gap: 20px;
+        }
+
+        .img-ot, .digr {
+            max-width: 90%; /* Ensure images don't overflow on small screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .reference {
+            gap: 15px;
+        }
+    }
+
+
+</style>
+<body class="body">
+  <!-- <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript> -->
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar" style="position: fixed;">
+      <div class="logo" tabindex="0" aria-label="vinod jangid logo">
+        <div class="logo-top">
+          <img src="src/png/avatar.png" alt="animation-head" id="nav-avatar" data-aos="fade-down" data-aos-delay="100"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class=" " class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a >
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="courseactivity.html">
+              
+                 &#60;/Course Activity&#62;
+            </a>
+          </li>
+
+        
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+
+  <section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+    <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+      <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+        <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+          &#60;What is an ALU ?&#62;
+        </h2>
+        <p class="sectionHeadingP" style="color: white;"> </p>
+      </div>
+  
+      <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+        <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1200px;">
+          <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between;">
+            
+            <!-- Content Section (Left Half) -->
+            <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+                The Arithmetic Logic Unit (ALU) is a crucial component of a computer's central processing unit (CPU). It performs arithmetic (addition, subtraction, multiplication, division) and logical (AND, OR, NOT, XOR) operations on integer binary numbers. The ALU handles various operations that are essential for computing tasks, making it an integral part of any processor architecture.
+                <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                    <li>
+                        Arithmetic Operations: Includes basic mathematical operations such as addition, subtraction, multiplication, and division.
+                    </li>
+                    <li>
+
+                        Logical Operations: Includes operations that compare and manipulate data, such as AND, OR, XOR, NOT, etc.
+                    </li>    
+                </ul>
+              </p>
+            </div>
+  
+            <!-- Image Section (Right Half) -->
+            <div class="image-div" style="flex: 1; display: flex; justify-content: center; ">
+              <img src="https://limeup.io/wp-content/uploads/2024/01/ALU-Definition.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section>
+    <div class="project-boxes-div" style="margin-left: 115px;">
+      <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-box project-box2" id="project-box2" style=" width: 85%; height: 450px;">
+          <div class="info-div" style="width: fit-content;">
+            <article class="ProjectHeading">8 bit ALU</article>
+
+            <p style="color: white; text-align: justify; font-size: 17px; line-height: 26px;">
+              An 8-bit ALU (Arithmetic and Logic Unit) processes 8-bit operands and performs a variety of logical and arithmetic operations. For logical operations, it utilizes basic logic gates, such as AND, OR, NOT, XOR, NAND, and NOR, to manipulate the bits of the input operands. These operations are fundamental for decision-making processes in computing, such as comparison and conditional branching. <br>
+
+For arithmetic operations, the ALU relies on supporting components like an adder for addition, a subtractor for subtraction, and in some cases, specialized circuits for multiplication and division. These arithmetic functions enable the ALU to perform essential calculations necessary for tasks such as number processing and data manipulation. <br>
+
+Additionally, the 8-bit ALU is capable of various shift operations, which modify the position of bits within the operand. These include left shift and right shift, which move bits in their respective directions while filling the vacated positions with zeros. It also supports left rotate and right rotate, where the shifted-out bits are reintroduced at the opposite end of the operand, effectively performing a circular shift. These operations are commonly used in bitwise manipulation tasks, such as adjusting values, optimizing storage, or implementing algorithms like encryption.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  </div>
+  </section>
+
+  <section>
+    <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+      <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+        &#60;Diagram &#62;
+      </h2>
+      <p class="sectionHeadingP" style="color: white;"> </p>
+    </div>
+    <div class="reference">
+        <div class="img-ot">
+            <img src="src/png/8bitmain.png" alt="Main Image">
+        </div>
+        <div class="digr">
+            <img src="src/png/8bi.png" alt="Secondary Image">
+        </div>
+    </div>
+</section>
+
+  
+
+      
+
+
+  
+
+
+
+
+
+
+
+
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background" style="height: 10px;">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="">
+      <div class="footercontainer">
+  
+        <div class="footer-bottom">
+          <article>
+            
+            &COPY; Copyright 2024  Computer Organization and Architecture
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      // var url = "src/pdf/Vinod's Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  
+</body>
+
+</html>

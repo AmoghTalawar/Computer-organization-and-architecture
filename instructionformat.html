@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-YMWDE0VTD3");
+  </script> -->
+
+  <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <title>COA</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+
+<style>
+
+
+
+</style>
+<body class="body">
+  <!-- <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript> -->
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar" style="position: fixed;">
+      <div class="logo" tabindex="0" >
+        <div class="logo-top">
+          <img src="src/png/avatar.png" alt="animation-head" id="nav-avatar" data-aos="fade-down" data-aos-delay="100"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class=" " class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a  href="index.html">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="courseactivity.html">
+              
+                 &#60;/Course Activity&#62;
+            </a>
+          </li>
+
+        
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+
+
+
+  <section>
+    <div class="project-boxes-div" style="margin-left: 115px;">
+        <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+            <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 50px;">
+              &#60; Instruction Format  &#62;
+            </h2>
+            <p class="sectionHeadingP" style="color: white;"> </p>
+          </div> 
+      <div data-aos="fade-up" class="project-box-wrapper">
+        
+        <div class="project-box project-box2" id="project-box2" style=" width: 85%; height: 250px;">
+          <div class="info-div" style="width: fit-content;">
+            <p style="color: white; text-align: justify; font-size: 17px; line-height: 26px;">
+                In computer architecture, an instruction format defines the layout and structure of an instruction that the processor can understand and execute. The format depends on the addressing mode used, as the addressing mode determines how the operand of the instruction is accessed (i.e., where the data for the operation is located). Different addressing modes specify how the operand is determined and can involve various fields in the instruction, such as the opcode, operand address, and immediate values. 
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <!-- 1 -->
+  <section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+    <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+      <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+        <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+          &#60; 1. Immediate Addressing Mode &#62;
+        </h2>
+        <p class="sectionHeadingP" style="color: white;"> </p>
+      </div>
+
+      <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+        <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1300px;">
+          <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between;">
+            
+            <!-- Content Section (Left Half) -->
+            <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+                In this mode, the operand is directly specified as part of the instruction. The operand is a constant value or immediate data that is used in the operation. <br>
+                <strong>Instruction Format: </strong>
+                <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                    <li>
+                        Opcode: The operation to be performed (e.g., ADD, SUB).
+                    </li>
+                    <li>
+
+                        Immediate Operand: The constant value (immediate data) used by the instruction.
+                    </li>    
+                    <li>
+                        Opcode | Operand (Immediate Data)
+
+                    </li>
+                    <li>
+                        MOV R1, #5 (Move the immediate value 5 into register R1)
+                    </li>
+                </ul>
+                
+              </p>
+            </div>
+  
+            <!-- Image Section (Right Half) -->
+            <div class="image-div" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+              <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200406101504/immediateaddressing2.png" alt="" height="50px" width="fit-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+<!-- 2 -->
+  <section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+    <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+      <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+        <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+          &#60; 2. Direct Addressing Mode &#62;
+        </h2>
+        <p class="sectionHeadingP" style="color: white;"> </p>
+      </div>
+
+      <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+        <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1300px;">
+          <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between;">
+            
+            <!-- Content Section (Left Half) -->
+            <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+                In this mode, the operand's address is directly specified in the instruction. The operand is located at the memory address provided. <br>
+                <strong>Instruction Format: </strong>
+                <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                    <li>
+                        Opcode: The operation to be performed .
+                    </li>
+                    <li>
+
+                        Direct Address: The memory address where the operand is stored.
+                    </li>    
+                    <li>
+                        Opcode | Direct Address
+
+
+                    </li>
+                    <li>
+                        MOV R1, 400 (Move the content of memory address 400 into register R1)
+                    </li>
+                </ul>
+                
+              </p>
+            </div>
+  
+            <!-- Image Section (Right Half) -->
+            <div class="image-div" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+              <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200908215237/DirectModerevised.jpg" alt="" height="50px" width="fit-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section> 
+
+  <!-- 3 -->
+
+  <section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+    <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+      <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+        <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+          &#60; 3. Indirect Addressing Mode &#62;
+        </h2>
+        <p class="sectionHeadingP" style="color: white;"> </p>
+      </div>
+
+      <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+        <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1300px;">
+          <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between;">
+            
+            <!-- Content Section (Left Half) -->
+            <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+                In this mode, the instruction specifies a memory address that contains the actual address of the operand. In other words, the address of the operand is stored in memory, and the instruction fetches that address to access the operand. <br>
+                <strong>Instruction Format: </strong>
+                <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                    <li>
+                        Opcode: The operation to be performed .
+                    </li>
+                    <li>
+
+                        Pointer Address: The memory address of a pointer, which points to the operand's actual address.
+                    </li>    
+                    <li>
+                        Opcode | Pointer Address
+
+
+
+                    </li>
+                    <li>
+                        MOV R1, [R2] (Move the content of the memory address stored in R2 into R1)
+                    </li>
+                </ul>
+                
+              </p>
+            </div>
+  
+            <!-- Image Section (Right Half) -->
+            <div class="image-div" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+              <img src="https://www.gatevidyalay.com/wp-content/uploads/2018/06/Indirect-Addressing-Mode-Addressing-Modes.png?ezimgfmt=rs:370x192/rscb1/ng:webp/ngcb1" alt="" height="50px" width="fit-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+ 
+  
+ 
+<!-- 4 -->
+<section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+  <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+    <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+      <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+        &#60; 4. Register Addressing Mode &#62;
+      </h2>
+      <p class="sectionHeadingP" style="color: white;"> </p>
+    </div>
+
+    <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+      <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1300px; ">
+        <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between; padding-right: 5px;">
+          
+          <!-- Content Section (Left Half) -->
+          <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+            <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+              In this mode, the operand is a register. The instruction specifies which register to use, and the operand is the content of that register. <br>
+              <strong>Instruction Format: </strong>
+              <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                  <li>
+                      Opcode: The operation to be performed.
+                  </li>
+                  <li>
+
+                      Register Address: The register whose value is used as the operand.
+                  </li>    
+                  <li>
+                      Opcode | Register Address
+
+
+                  </li>
+                  <li>
+                      ADD R1 (Add the contents of register R2 to register R1)
+                  </li>
+              </ul>
+              
+            </p>
+          </div>
+
+          <!-- Image Section (Right Half) -->
+          <div class="image-div" style="flex: 1; display: flex; justify-content: center; align-items: center; ">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200429162555/register-mode-1.png" alt="" height="50px" width="fit-content">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+ 
+  <section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+    <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+      <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px; ">
+        <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here" style="margin-left: 200px;">
+          &#60; 5.  Register Indirect Addressing Mode  &#62;
+        </h2>
+        <p class="sectionHeadingP" style="color: white;"> </p>
+      </div>
+
+      <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+        <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1350px;">
+          <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between;">
+            
+            <!-- Content Section (Left Half) -->
+            <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+               
+In this mode, the operand is located at the address stored in a register. The register holds the effective address where the operand resides. <br>
+                <strong>Instruction Format: </strong>
+                <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                    <li>
+                        Opcode: The operation to be performed .
+                    </li>
+                    <li>
+
+                        Register Address: The register containing the address of the operand.
+                    </li>    
+                    <li>
+                        Opcode | Register Address
+
+
+
+
+                    </li>
+                    <li>
+                        MOV R1, [R2] (Move the content of the memory address stored in R2 into R1)
+                    </li>
+                </ul>
+                
+              </p>
+            </div>
+  
+            <!-- Image Section (Right Half) -->
+            <div class="image-div" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+              <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200429162555/register-mode-1.png" alt="" height="50px" width="fit-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+    <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+      <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px;">
+        <h2 class="section-heading-article" tabindex="0" aria-label="Indexed Addressing Mode" style="margin-left: 200px;">
+          &#60; 6.  Indexed Addressing Mode  &#62;
+        </h2>
+      </div>
+  
+      <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+        <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1350px;">
+          <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between;">
+            
+            <!-- Content Section (Left Half) -->
+            <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+                In Indexed Addressing Mode, the operand's address is determined by adding a constant value (index) to the base address stored in a register. This mode is typically used for accessing array elements or specific memory locations.<br><br>
+                
+                <strong>Instruction Format:</strong>
+                <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+                  <li>Opcode | Base Address + Index Value</li>
+                  <li> MOV R1, [R2 + 100] (Move the content of the memory address `R2 + 100` into R1)</li>
+                </ul>
+              </p>
+            </div>
+  
+            <!-- Image Section (Right Half) -->
+            <div class="image-div" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+              <img src="https://www.gatevidyalay.com/wp-content/uploads/2018/06/Indexed-Addressing-Mode-Addressing-Modes.png" alt="Indexed Addressing Mode" height="250px" width="fit-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+    <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+      <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px;">
+        <h2 class="section-heading-article" tabindex="0" aria-label="Relative Addressing Mode" style="margin-left: 200px;">
+          &#60; 7.  Relative Addressing Mode  &#62;
+        </h2>
+      </div>
+  
+      <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+        <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1350px;">
+          <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between;">
+            
+            <!-- Content Section (Left Half) -->
+            <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+                In Relative Addressing Mode, the operand's address is determined by adding an offset (or displacement) to the current program counter (PC). This is commonly used for branching operations.<br><br>
+                
+                <strong>Instruction Format:</strong>
+                <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+                  <li>Opcode: The operation to be performed (e.g., JMP, CALL).</li>
+                  <li>Offset: A constant value that is added to the current program counter to calculate the target address (e.g., +4).</li>
+                  <li>Opcode | Offset</li>
+                  <li> JMP +4 (Jump to the memory address `PC + 4`)</li>
+                </ul>
+              </p>
+            </div>
+  
+            <!-- Image Section (Right Half) -->
+            <div class="image-div" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+              <img src="https://www.gatevidyalay.com/wp-content/uploads/2018/06/Relative-Addressing-Mode-Addressing-Modes.png" alt="Relative Addressing Mode" height="250px" width="fit-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section-container" id="projects" style="width: 100%; padding: 0;">
+    <div class="projects-section-div" style="width: 100%; max-width: 100%; margin: 0;">
+      <div class="section-heading" data-aos="fade-up" style="text-align: center; padding-bottom: 20px; margin-top: 30px;">
+        <h2 class="section-heading-article" tabindex="0" aria-label="Stack Addressing Mode" style="margin-left: 200px;">
+          &#60; 8.  Stack Addressing Mode  &#62;
+        </h2>
+      </div>
+  
+      <div class="project-boxes-div" style="width: 100%; display: flex; justify-content: center;">
+        <div data-aos="fade-up" class="project-box-wrapper" style="width: 100%; max-width: 1350px;">
+          <div class="project-box project-box2" id="project-box2" style="display: flex; width: 100%; height: 450px; align-items: center; justify-content: space-between;">
+            
+            <!-- Content Section (Left Half) -->
+            <div class="info-div" style="flex: 1; padding: 20px; display: flex; justify-content: center; align-items: center;">
+              <p style="color: white; text-align: justify; font-size: 17px; line-height: 1.5;">
+                In Stack Addressing Mode, operands are accessed from the stack, which is a last-in, first-out (LIFO) structure. The stack is typically used for temporary storage of data, such as function calls or local variables.<br><br>
+                
+                <strong>Instruction Format:</strong>
+                <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+                  <li>Opcode: The operation to be performed (e.g., PUSH, POP).</li>
+                  <li>Stack Pointer: The pointer to the top of the stack (e.g., SP).</li>
+                  <li>Opcode | Stack Pointer</li>
+                  <li> PUSH R1 (Push the value in R1 onto the stack)</li>
+                  <li> POP R2 (Pop the value from the stack into R2)</li>
+                </ul>
+              </p>
+            </div>
+  
+            <!-- Image Section (Right Half) -->
+            <div class="image-div" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+              <img src="https://sf.ezoiccdn.com/ezoimgfmt/cstaleem.com/wp-content/uploads/2020/07/2-Stack-Addressing-Mode-in-CoA.png?ezimgfmt=rs:388x287/rscb1/ngcb1/notWebP" alt="Stack Addressing Mode" height="250px" width="fit-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+      
+
+
+  
+
+
+
+
+
+
+
+
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background" style="height: 10px;">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="">
+      <div class="footercontainer">
+  
+        <div class="footer-bottom">
+          <article>
+            
+            &COPY; Copyright 2024  Computer Organization and Architecture
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      // var url = "src/pdf/Vinod's Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  
+</body>
+
+</html>
